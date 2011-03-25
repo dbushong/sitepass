@@ -1,0 +1,9 @@
+{ "name": "SitePass"
+, "version": "1.0"
+, "background_page": "background.html"
+, "description": "Generates a stable password for a each domain"
+, "permissions": [ "contextMenus", "tabs", "http://*/*" ]
+, "icons": { "16":  "icon16.png"
+           , "128": "icon128.png"
+           }
+}

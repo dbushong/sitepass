@@ -1,9 +1,13 @@
 { "name": "SitePass"
 , "version": "1.0"
-, "background_page": "background.html"
 , "description": "Generates a stable password for a each domain"
-, "permissions": [ "contextMenus", "tabs", "http://*/*" ]
+, "permissions": [ "tabs" ]
 , "icons": { "16":  "icon16.png"
+           , "48":  "icon48.png"
            , "128": "icon128.png"
            }
+, "browser_action": { "default_icon": "icon19.png"
+                    , "default_title": "Generate SitePass"
+                    , "default_popup": "popup.html"
+                    }
 }

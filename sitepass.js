@@ -2,7 +2,8 @@ function $(id) {
   return document.getElementById(id);
 }
 
-function genPopupPass() {
+function genPopupPass(e) {
+  e.preventDefault();
   var res      = $('result');
   res.firstChild.nodeValue = 
     hex_md5('<' + $('domain').value + '>' + $('password').value).substr(0, 8);
@@ -17,7 +18,10 @@ function setPopupDomain() {
     if (!m) return;
     var domain = m[1].replace(/^www\./, '');
     $('domain').value = domain;
+    $('password').focus();
   });
-  $('password').focus();
   $('result').style.display = 'none';
+  $('pass-form').addEventListener('submit', genPopupPass);
 }
+
+window.addEventListener('load', setPopupDomain);

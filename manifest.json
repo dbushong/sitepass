@@ -1,6 +1,6 @@
 { "name": "SitePass"
 , "manifest_version": 2
-, "version": "1.0"
+, "version": "1.1"
 , "description": "Generates a stable password for a each domain"
 , "permissions": [ "tabs" ]
 , "icons": { "16":  "icon16.png"
